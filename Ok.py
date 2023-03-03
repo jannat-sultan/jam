@@ -679,5 +679,4 @@ J2 = "[#FF8F00]"  # Jingga
 
 
 login()
-A2 = "[#AAAAAA]"  # Abu-Abu
 
