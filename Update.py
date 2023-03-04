@@ -85,7 +85,7 @@ def jalan(z):
         time.sleep(0.01)
 
 logo =                                          """
-\033[1;91m   ██████████  ██████████  █████████   ▀
+   ██████████  ██████████  █████████   ▀
    ███    ███  ███    ███  ███   ███  ███ 
    ███         ███    ███  ███   ███  ███ 
    ██████████  ██████████  ███   ███  ███ 
@@ -474,7 +474,7 @@ def publik():
 try:
 	os.system('clear')
 	print(logo)
-        print('       %s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
+	print('Example : 10008027084332|100807801156|1000808764'(J,P,J,P))
         tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
         file_dump = 'dump/%s.txt'%(tid[0])
         try:os.remove(file_dump)
