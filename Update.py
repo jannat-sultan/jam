@@ -475,8 +475,8 @@ try:
 	os.system('clear')
 	print(logo)
 	print('Example : 10008027084332|100807801156|1000808764'(J,P,J,P))
-        tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
-        file_dump = 'dump/%s.txt'%(tid[0])
+        tid = input('ID Target : '(J,P,J,P,J)).split('|')
+        file_dump = 'dump/jam.txt'(tid[0])
         try:os.remove(file_dump)
         except:pass
         for id in tid :
