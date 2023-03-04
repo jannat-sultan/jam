@@ -91,7 +91,7 @@ logo =                                          """
    ██████████  ██████████  ███   ███  ███ 
           ███  ███    ███  ███   ███  ███  
    ███    ███  ███    ███  ███   ███  ███  
-   ██████████  ███    ███  ███   ███  ███ \033[7m\033[1;36mQUEEN
+   ██████████  ███    ███  ███   ███  ███ QUEEN
 \033[1;97m══════════════════════════════════════════════
  [✓] Owner   : Jannat Sultan
  [✓] Github  : https://github.com/Jannat-Sultan 
@@ -476,12 +476,11 @@ def publik():
             token  = open('login/token.txt','r').read()
             cookie = {'cookie':open('login/cookie.txt','r').read()}
         except:
-            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
             time.sleep(3)
 		
         print(logo)
-        print('       %s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
+        print('%s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
+        tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
         file_dump = 'dump/%s.txt'%(tid[0])
         try:os.remove(file_dump)
         except:pass
