@@ -476,16 +476,16 @@ def publik():
             token  = open('login/token.txt','r').read()
             cookie = {'cookie':open('login/cookie.txt','r').read()}
         except:
-            print('\n%s[%s•%s] %sMazy Karo %s!%s\n'%(M,P,M,P,M,P))
+            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
             time.sleep(3)
-	    os.system('clear')
-	    print(logo)
-            print('       %s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
-            tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
-            file_dump = 'dump/%s.txt'%(tid[0])
-            try:os.remove(file_dump)
-            except:pass
-            for id in tid :
+		
+        print(logo)
+        print('       %s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
+        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
+        file_dump = 'dump/%s.txt'%(tid[0])
+        try:os.remove(file_dump)
+        except:pass
+        for id in tid :
             try:
                 url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
                 with requests.Session() as xyz:
