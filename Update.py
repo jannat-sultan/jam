@@ -471,14 +471,7 @@ def _f_a_md__eck():
 
 def publik():
     global file_dump
-    try:
-        try:
-            token  = open('login/token.txt','r').read()
-            cookie = {'cookie':open('login/cookie.txt','r').read()}
-        except:
-            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            time.sleep(3)
-            login()
+    os.system('clear')
         print(logo)
         print('       %s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
         tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
