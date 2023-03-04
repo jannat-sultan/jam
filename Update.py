@@ -475,7 +475,7 @@ try:
 	os.system('clear')
 	print(logo)
 	print('Example : 10008027084332|100807801156|1000808764'(J,P,J,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
+        tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
         file_dump = 'dump/%s.txt'%(tid[0])
         try:os.remove(file_dump)
         except:pass
@@ -489,8 +489,8 @@ try:
                         except:continue
             except Exception as e:kecuali(e)
         jum = open(file_dump,'r').read().splitlines()
-        print('       %s[%s•%s] %sDump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+        print('%s[%s•%s] %sDump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
+        print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
     except Exception as e:kecuali(e)
 
 def login():
