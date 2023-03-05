@@ -187,7 +187,7 @@ def file_c(ids,names,p_list):
             elif 'SMS shortly' in resp.text:
                 print('\r\033[1;96m [JANNAT-2F] '+ids+' | '+pas)
                 wrt = (ids+' | '+pas)
-                2f.append(wrt)
+                sms.append(wrt)
                 open('jam-2f.txt' , 'a').write('%s\n' % wrt)
                 break
             elif 'checkpoint' in resp.text:
