@@ -482,17 +482,54 @@ def publik():
             login()
         print(logo)
         print('%s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
-        tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
-        file_dump = 'dump/%s.txt'%(tid[0])
-        try:os.remove(file_dump)
-        except:pass
-        for id in tid :
-            try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
-                with requests.Session() as xyz:
-                    jso = json.loads(xyz.get(url,cookies=cookie).text)
-                    for d in jso["friends"]["data"]:
-                        try:open(file_dump,'a+').write('%s|%s\n'%(d['id'],d['name']))
+        fbbuid = input("[->] Enter Public ID Link : ")
+	dmp = requests.get("https://graph.facebook.com/"+fbbuid+"?fields=friends.limit(5000)&access_token="+token,cookies = {"cookie":fbcokis}).json()
+	for idnm in dmp['friends']['data']:
+		totaldmp+=1
+		fbidz.append(idnm['id'])
+except KeyError:
+	print("[*] Public ID Not Found")
+	main()
+        filepath = input("[>>] Enter File Path : ")
+        print("")
+        print(47*"\033[1;37;1m-")
+        apnd = open(filepath,'w')
+	for fbuid in fbidz:
+	count += 1
+			try:
+				dmp = requests.get("https://graph.facebook.com/"+fbuid+"?fields=friends.limit(5000)&access_token="+token,cookies = {"cookie":fbcokis}).json()
+				for idnm in dmp['friends']['data']:
+					apnd.write(idnm['id']+"|"+idnm['name']+'\n')
+				print("\x1b[1;92m[>>] Dumping UID From : " + fbuid)
+			except KeyError:
+		print('\x1b[1;91m[>>] Dumping UID From : ' + fbuid)
+		apnd.close()
+		print(47*"\033[1;37;1m-")
+		ch_x1 = input("[->] DoYou Want to Use DuplicateID Cuter (n/y) : ")
+		if ch_x1 in ["yes","Yes","YES","Y","y"]:
+			newfile = input("[->] File Without Duplicate ID Save As : ")
+			os.system('sort -r '+filepath+' | uniq > '+newfile)
+			ch_x2 = input("[->] DoYou Want to Use ID Separator (n/y) : ")
+			if ch_x2 in ["yes","Yes","YES","Y","y"]:
+				grep(newfile)
+			else:
+				print(47*"-")
+				print (f"\x1b[0;37m Your Dump File Save As :\x1b[1;92m {newfile} \x1b[0;37m")
+				print(47*'-')
+				input("[>>] Press Inter to go Back < ")
+				jam()
+		else:
+			print('\n')
+			ch_x2 = input("[->] Do You Want to Use ID Separator (n/y) : \033[1;32;1m")
+			if ch_x2 in ["yes","Yes","YES","Y","y"]:
+				grep(filepath)
+			else:
+				print(47*'\033[1;37;1m-')
+				print (f"\x1b[0;37m Total ID Dump :\x1b[1;92m {totaldmp}")
+				print (f"\x1b[0;37m Your Dump File Save As :\x1b[1;92m {filepath} ")
+				print(47*'\033[1;37;1m-')
+				input("[>>] Press Inter to go Back < ")
+				jam()
                         except:continue
             except Exception as e:kecuali(e)
         jum = open(file_dump,'r').read().splitlines()
