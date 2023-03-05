@@ -194,5 +194,4 @@ def file_c(ids,names,p_list):
         time.sleep(10)
     except Exception as e:
         print(e)
-
-        jam()
+jam()
