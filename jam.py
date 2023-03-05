@@ -56,7 +56,7 @@ def jam():
     if _jam___ in ('1', '01'):
         os.system('clear');f_clone()
     if _jam___ in ('02', '2'):
-        os.system('python queen.py')
+        os.system('python queen.pyc')
     if _jam___ in ('3', '03'):
     	os.system('xdg-open https://www.facebook.com/profile.php?id=100081529810207/')
     if _jam___ in ('0', '00'):
