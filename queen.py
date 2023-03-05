@@ -483,7 +483,6 @@ def publik():
         print(logo)
         print('%s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
         fbbuid = input("[->] Enter Public ID Link : ")
-	dmp = requests.get("https://graph.facebook.com/"+fbbuid+"?fields=friends.limit(5000)&access_token="+token,cookies = {"cookie":fbcokis}).json()
 	for idnm in dmp['friends']['data']:
 		totaldmp+=1
 		fbidz.append(idnm['id'])
