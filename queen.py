@@ -91,10 +91,10 @@ logo =                                          """
    \033[1;96m██▄▄▄██\033[1;91m ██   ██\033[1;93m ██  ██  ██ 
 \033[7m\033[1;92m【𝗝𝗔𝗠 𝗦𝗛𝗔𝗛𝗥𝗨𝗞𝗛 ♡ 𝗝𝗔𝗡𝗡𝗔𝗧 𝗦𝗨𝗟𝗧𝗔𝗡】\033[0m
 \033[1;97m══════════════════════════════════════════════
-\033[1;91m ●︎ 𝗢𝘄𝗻𝗲𝗿 : 𝗝𝗔𝗠 𝗦𝗛𝗔𝗛𝗥𝗨𝗞𝗛 ﾒ 𝗝𝗔𝗡𝗡𝗔𝗧 𝗦𝗨𝗟𝗧𝗔𝗡       
- ●︎ 𝗚𝗶𝘁𝗵𝘂𝗯  : 𝗵𝘁𝘁𝗽𝘀://𝗴𝗶𝘁𝗵𝘂𝗯.𝗰𝗼𝗺/𝗝𝗮𝗻𝗻𝗮𝘁-𝗦𝘂𝗹𝘁𝗮𝗻       
- ●︎ 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: 𝗝𝗮𝗺 𝗦𝗵𝗮𝗵𝗿𝘂𝗸𝗵 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹               
- ●︎ 𝗱𝗼𝗻'𝘁 𝗽𝗵𝗲𝗲𝗹 𝗺𝗲:) 𝗵𝗮𝘁𝘁𝗲𝗿𝘇 𝗺𝗮𝗸𝗲 𝗺𝗲 𝗳𝗮𝗺𝗼𝘂𝘀     
+\033[1;96m ●︎ \033[1;91m𝗢𝘄𝗻𝗲𝗿 : 𝗝𝗔𝗠 𝗦𝗛𝗔𝗛𝗥𝗨𝗞𝗛 ﾒ 𝗝𝗔𝗡𝗡𝗔𝗧 𝗦𝗨𝗟𝗧𝗔𝗡       
+\033[1;96m ●︎ \033[1;91m𝗚𝗶𝘁𝗵𝘂𝗯  : 𝗵𝘁𝘁𝗽𝘀://𝗴𝗶𝘁𝗵𝘂𝗯.𝗰𝗼𝗺/𝗝𝗮𝗻𝗻𝗮𝘁-𝗦𝘂𝗹𝘁𝗮𝗻       
+\033[1;96m ●︎ \033[1;91m𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: 𝗝𝗮𝗺 𝗦𝗵𝗮𝗵𝗿𝘂𝗸𝗵 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹               
+\033[1;96m ●︎ \033[1;91m𝗱𝗼𝗻'𝘁 𝗽𝗵𝗲𝗲𝗹 𝗺𝗲:) 𝗵𝗮𝘁𝘁𝗲𝗿𝘇 𝗺𝗮𝗸𝗲 𝗺𝗲 𝗳𝗮𝗺𝗼𝘂𝘀     
 \033[1;97m══════════════════════════════════════════════"""
 
 
@@ -113,13 +113,13 @@ def jam():
     ipm = requests.get(url_ip).json()
     todz = ''
     IP = ipm['origin']
-    print('\033[1;96m [01] \033[1;97mNew Method File Clone')
-    print(' \033[1;96m[02] \033[1;97mStart Cloning Old Method')
-    print(' \033[1;96m[03] \033[1;97mCreate File ')
-    print(' \033[1;96m[04] \033[1;97mSeprate Idz ')
-    print(' \033[1;96m[05] \033[1;97mDouble Idz Cut From File ')
-    print(' \033[1;96m[06] \033[1;97mRemove Expire Token')
-    print('\033[1;96m [00] \033[1;97mExit ')
+    print('\033[1;96m [01] \033[1;91mNew Method File Clone')
+    print(' \033[1;96m[02] \033[1;91mStart Cloning Old Method')
+    print(' \033[1;96m[03] \033[1;91mCreate File ')
+    print(' \033[1;96m[04] \033[1;91mSeprate Idz ')
+    print(' \033[1;96m[05] \033[1;91mDouble Idz Cut From File ')
+    print(' \033[1;96m[06] \033[1;91mRemove Expire Token')
+    print('\033[1;96m [00] \033[1;91mExit ')
     print('\033[1;97m══════════════════════════════════════════════')
     _jams___ = input('\033[1;93m[•] \033[1;97mChoose : ')
     if _jams___ in ('1', '01'):
@@ -193,7 +193,7 @@ class __xxx__:
                     "upgrade-insecure-requests":"1",
                     "origin":"https://"+cebok,
                     "content-type":"application/x-www-form-urlencoded",
-                    "user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]",
+                    "user-agent":"Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]",
                     "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "x-requested-with":"XMLHttpRequest",
                     "sec-fetch-site":"same-origin",
@@ -481,8 +481,8 @@ def publik():
             time.sleep(3)
             login()
         print(logo)
-        print('       %s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
+        print('%s[%s•%s] %sExample : 10008027084332|100807801156|1000808764'%(J,P,J,P))
+        tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split('|')
         file_dump = 'dump/%s.txt'%(tid[0])
         try:os.remove(file_dump)
         except:pass
@@ -496,8 +496,8 @@ def publik():
                         except:continue
             except Exception as e:kecuali(e)
         jum = open(file_dump,'r').read().splitlines()
-        print('       %s[%s•%s] %sDump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+        print('%s[%s•%s] %sDump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
+        print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
     except Exception as e:kecuali(e)
 
 def login():
@@ -549,7 +549,7 @@ kata_dev = 'Lu Ganteng Banget Bang. Gw Mau Recode SClu, Soalnya Gw Goblok Soal C
 web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
-header_grup = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]"}
+header_grup = {"user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]"}
 ###
 
 Z = "\x1b[0;90m"     # Hitam
