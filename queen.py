@@ -114,8 +114,8 @@ def jam():
     todz = ''
     IP = ipm['origin']
     print('\033[1;96m [01] \033[1;91mNew Method File Clone')
-    print(' \033[1;96m[02] \033[1;91mStart Cloning Old Method')
-    print(' \033[1;96m[03] \033[1;91mCreate File ')
+    print(' \033[1;96m[02] \033[1;91mOld Method File Clone')
+    print(' \033[1;96m[03] \033[1;91mMake File Use Any Command ')
     print(' \033[1;96m[04] \033[1;91mSeprate Idz ')
     print(' \033[1;96m[05] \033[1;91mDouble Idz Cut From File ')
     print(' \033[1;96m[06] \033[1;91mRemove Expire Token')
