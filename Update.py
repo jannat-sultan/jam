@@ -449,7 +449,7 @@ def _f_a_md__eck():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://cutt.ly/rHG1EnC').text
+    httpCaht = requests.get('https://cutt.ly/58RMYZa').text
     if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
