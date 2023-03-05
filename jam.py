@@ -48,9 +48,6 @@ logo =                                          """
 def jam():
     os.system('clear')
     print(logo)
-    ipm = requests.get(url_ip).json()
-    todz = ''
-    IP = ipm['origin']
     print('\033[1;93m [01] \033[1;97mStart File Cloning ')
     print(' \033[1;94m[02] \033[1;97mMain Menu ')
     print(' \033[1;93m[03] \033[1;97mFollow Me On Facebook ')
@@ -195,9 +192,7 @@ def file_c(ids,names,p_list):
         loop+=1
     except requests.exceptions.ConnectionError:
         time.sleep(10)
-        jam()
     except Exception as e:
         print(e)
 
-        
-jam()
+        jam()
