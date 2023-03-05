@@ -484,7 +484,7 @@ def publik():
         except:pass
         for id in tid :
             try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
+                url = requests.get("https://graph.facebook.com/"+fbuid+"?fields=friends.limit(5000)&access_token="+token,cookies = {"cookie":fbcokis}).json()
                 with requests.Session() as xyz:
                     jso = json.loads(xyz.get(url,cookies=cookie).text)
                     for d in jso["friends"]["data"]:
