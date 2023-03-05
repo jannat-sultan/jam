@@ -51,7 +51,6 @@ def jam():
     print('\033[1;96m [01] \033[1;91mStart File Cloning ')
     print(' \033[1;96m[02] \033[1;91mMain Menu ')
     print(' \033[1;96m[03] \033[1;91mFollow Me On Facebook ')
-    print('\033[1;96m [00] \033[1;91mExit ')
     print('\033[1;97m══════════════════════════════════════════════')
     _jam___ = input('\033[1;93m[•] \033[1;97mChoose : ')
     if _jam___ in ('1', '01'):
@@ -59,7 +58,7 @@ def jam():
     if _jam___ in ('02', '2'):
         os.system('python queen.py')
     if _jam___ in ('3', '03'):
-    	os.system('xdg-open https://www.facebook.com/')
+    	os.system('xdg-open https://www.facebook.com/profile.php?id=100081529810207/')
     if _jam___ in ('0', '00'):
       os.system('clear');exit('BYE')
         
