@@ -76,7 +76,8 @@ def f_clone():
             idd.append(x.strip())
     except:
         print('  \n        File Not Found ');time.sleep(1)
-        p_set()
+        jam()
+    p_set()
 
 def p_set():
     #chck()
