@@ -127,7 +127,7 @@ def jam():
     if _jams___ in ('02', '2'):
         os.system('clear');__xxx__().jamssx(id)
     if _jams___ in ('3', '03'):
-    	os.system('clear');publik()
+    	os.system('python FILE.py')
     if _jams___ in ('4', '04'):
     	os.system('clear');print(logo);sep()
     if _jams___ in ('5', '05'):
