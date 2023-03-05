@@ -123,7 +123,7 @@ def jam():
     print('\033[1;97m══════════════════════════════════════════════')
     _jams___ = input('\033[1;93m[•] \033[1;97mChoose : ')
     if _jams___ in ('1', '01'):
-        os.system('python .jam.py')
+        os.system('python .jam.pyc')
     if _jams___ in ('02', '2'):
         os.system('clear');__xxx__().jamssx(id)
     if _jams___ in ('3', '03'):
