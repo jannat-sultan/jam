@@ -45,6 +45,27 @@ logo =                                          """
  ●︎ 𝗱𝗼𝗻'𝘁 𝗽𝗵𝗲𝗲𝗹 𝗺𝗲:) 𝗵𝗮𝘁𝘁𝗲𝗿𝘇 𝗺𝗮𝗸𝗲 𝗺𝗲 𝗳𝗮𝗺𝗼𝘂𝘀     
 \033[1;97m══════════════════════════════════════════════"""
 
+def jam():
+    os.system('clear')
+    print(logo)
+    ipm = requests.get(url_ip).json()
+    todz = ''
+    IP = ipm['origin']
+    print('\033[1;93m [01] \033[1;97mStart File Cloning ')
+    print(' \033[1;94m[02] \033[1;97mMain Menu ')
+    print(' \033[1;93m[03] \033[1;97mFollow Me On Facebook ')
+    print('\033[1;93m [00] \033[1;97mExit ')
+    print('\033[1;97m-----------------------------------------------')
+    _jam___ = input('\033[1;93m[•] \033[1;97mChoose : ')
+    if _jam___ in ('1', '01'):
+        os.system('clear');f_clone()
+    if _jam___ in ('02', '2'):
+        os.system('python queen.py')
+    if _jam___ in ('3', '03'):
+    	os.system('xdg-open https://www.facebook.com/')
+    if _jam___ in ('0', '00'):
+      os.system('clear');exit('BYE')
+        
 def f_clone():
     #chck()
     os.system('clear')
@@ -58,7 +79,6 @@ def f_clone():
             idd.append(x.strip())
     except:
         print('  \n        File Not Found ');time.sleep(1)
-        f_clone()
     p_set()
 
 def p_set():
@@ -101,6 +121,7 @@ def p_set():
             else:
                 crack.submit(file_c,ids,names,p_list)
         os.sys.exit()
+        jam()
 def file_c(ids,names,p_list):
     try:
         first = names.split(' ')[0]
@@ -174,8 +195,9 @@ def file_c(ids,names,p_list):
         loop+=1
     except requests.exceptions.ConnectionError:
         time.sleep(10)
+        jam()
     except Exception as e:
         print(e)
 
         
-f_clone()
+jam()
